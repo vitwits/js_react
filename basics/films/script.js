@@ -24,3 +24,20 @@
 
 const numberOfFilms = prompt('What number of films have you already watched?');
 
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+};
+
+const a = prompt('What is one of the last films you have watched?'),
+      b = prompt('How would you rate it?'),
+      c = prompt('What is one of the last films you have watched?'),
+      d = prompt('How would you rate it?');
+
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
+
+console.log(personalMovieDB.movies);
